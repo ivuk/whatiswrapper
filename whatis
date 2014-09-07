@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WHATIS=$(which whatis)
+XDGOPEN=$(which xdg-open)
+URL="http://youtu.be/xhrBDcQq2DM"
+
+if [[ -z $WHATIS || -z $XDGOPEN ]]; then
+    echo "Could not find whatis or xdg-open command"
+    exit 14
+fi
+
+if [[ $1 != 'love' ]]; then
+    $WHATIS $@
+else
+    $XDGOPEN $URL
+fi
+
