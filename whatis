@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WHATIS=$(which whatis)
+WHATIS="/usr/bin/whatis"
 XDGOPEN=$(which xdg-open)
 URL="http://youtu.be/xhrBDcQq2DM"
 
