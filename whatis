@@ -5,7 +5,7 @@ XDGOPEN=$(which xdg-open)
 URL="https://www.youtube.com/watch?v=HEXWRTEbj1I"
 
 if [[ -z $XDGOPEN ]]; then
-    echo "Could not find whatis or xdg-open command"
+    echo "Could not find xdg-open command"
     exit 14
 fi
 
