@@ -4,7 +4,7 @@ WHATIS="/usr/bin/whatis"
 XDGOPEN=$(which xdg-open)
 URL="https://www.youtube.com/watch?v=HEXWRTEbj1I"
 
-if [[ -z $WHATIS || -z $XDGOPEN ]]; then
+if [[ -z $XDGOPEN ]]; then
     echo "Could not find whatis or xdg-open command"
     exit 14
 fi
